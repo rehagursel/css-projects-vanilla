@@ -1,0 +1,370 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul, li {
+	list-style: none;
+    /* display: inline; */
+
+}
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:300;
+    color: #707070; 
+    line-height: 1.2;
+    font-size: 1.125rem;
+    font-size: 18px;
+} 
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.title{
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #143774;
+}
+.subTitle{
+    color: #1792D2;
+    font-weight: bold;
+    font-size: .75rem;
+    letter-spacing: 1px;
+}
+
+.ArticleReadMore{
+    font-size: 0.825rem;
+    font-weight: 700;
+    color: #1792D2;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.ArticleReadMore:hover,
+.ArticleReadMore:focus{
+    color: #143774;
+    text-decoration: underline;  
+}
+.articleInfo{
+    font-size: 0.825rem;
+    margin: 1em 0;
+    text-align: end;
+}
+
+.articleTitle{
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    color: #143774;
+    
+    margin-bottom: 1em;
+}
+.widgetTitle{
+    text-transform: uppercase;
+    color:#143774;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.widgetRecentPostTitle{
+    color:#143774;
+}
+span{
+    font-weight: 700;
+}
+.articleBody{
+    font-family: 'Ubuntu';
+    margin-bottom: 1em;
+    
+}
+
+.sideBarWidgets{
+    border: 20px solid #EBEBEB ;
+    margin: 3em 1em;
+    padding: 1.5em 1.5em 2em 1.5em;
+}
+
+
+
+.widgetImage{
+    margin-top: 1em;
+}
+.widgetBody{
+    margin-top: 1em;
+}
+
+.widgetRecentPostTitle{
+    margin-top: 1em;
+}
+.widgetRecentPost{
+    display: flex;
+    flex-direction: column;
+    }
+    .widgetImage{
+        order: 1;
+    }
+    .widgetRecentPostTitle{
+        order: 2;
+    }
+
+    .widgetRecentPost:nth-of-type(1), .widgetRecentPost:nth-of-type(2){
+        border-bottom: 1px solid #707070 ;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+    }
+
+.articleFeatured{
+    display: flex;
+    flex-direction: column;
+    }
+    .articleImage{
+        order: -2;
+        width: 100%;
+        min-height: 170px;
+        object-fit: cover;
+        
+    }
+    .articleInfo{
+        order: -1;
+    }
+   
+/* .articleRecent{
+    margin-bottom: 3em;
+} */
+.imageMain{
+    object-position: bottom;
+    height: 360px;
+    object-fit: cover;
+}
+.imageWork{
+   
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    object-position: -40px -40px;
+    
+  
+}
+.workInfo{
+    margin-top: -30px;
+}
+
+
+
+.container{
+   /*  border: 1px pink solid; */
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+   
+    text-align: center;
+    
+}
+.containerHome{
+display: flex;
+flex-direction: column;
+max-width: 80%;
+margin: 2em auto;
+
+}
+
+.articleFeatured{
+    border-bottom: 1px solid #707070 ;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.heading{
+    margin-top:30px;
+    /* border: solid pink 1px; */
+}
+
+nav ul{
+display: flex;
+justify-content: space-between;
+margin: 30px 0;
+width: 340px;
+/* border: pink solid 1px; */
+
+}
+
+nav a{
+    text-decoration: none;
+    color:#707070;
+    font-weight: 700;
+    transition:color 500ms;
+    padding-bottom: 0.25em;
+}
+
+nav a:hover{
+color:#1792D2;
+}
+
+.home{
+    border-bottom: solid 2px #1792D2; 
+    color:#1792D2;
+}
+
+.articleRecent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+}
+.articleRecentMain{
+    order: 2;
+}
+.articleRecentSecondary{
+    order: 1;
+}
+
+footer{
+    background-color: #143774;
+    padding: 3em 0;
+    text-align: center;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.541);
+    letter-spacing: .5px;
+}
+footer p:first-of-type{
+    font-weight: bold;
+    margin-bottom: .3em;
+}
+
+@media (max-width:425px){
+    
+    nav ul{
+       flex-direction: column;
+       width: 100%;
+    }
+    nav li:nth-child(1), nav li:nth-child(2){
+        margin-bottom: 10px;
+    }
+    .container, .containerHome{
+        padding: 1em;
+        
+    }
+    
+    
+}
+
+
+@media (min-width:800px) and (max-width:1100px){
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4em 3em;
+       
+    }
+    .containerHome{
+       
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+        padding: 2em 3em;
+    }
+    
+   
+    main{
+        width: 70%;
+    }
+    .sideBar{
+        width: 25%;
+    }
+    .articleRecent{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3em;
+    }
+    .articleRecentMain{
+        width: 65%;
+    }
+    .articleRecentSecondary{
+        width: 32%;
+    }
+    .articleInfo{
+        text-align: start;
+    }
+    .sideBarWidgets{
+        margin: 0 0 3em 0;
+    }
+    
+    .heading{
+        margin-top: 0;
+    }
+}
+
+@media (min-width:1100px) and (max-width:4000px){
+    .container{
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 4em 10em;
+       
+       
+    }
+    .containerHome{
+       
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+        padding: 2em 10em;
+    }
+    main{
+        width: 70%;
+    }
+    .sideBar{
+        width: 25%;
+    }
+    .articleRecent{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3em;
+    }
+    .articleRecentMain{
+        width: 65%;
+    }
+    .articleRecentSecondary{
+        width: 32%;
+    }
+    .articleInfo{
+        text-align: start;
+    }
+
+    .sideBarWidgets{
+        margin: 0 0 3em 0;
+    }
+
+   
+    .heading{
+        margin-top: 0;
+    }
+}

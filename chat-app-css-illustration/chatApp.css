@@ -1,0 +1,401 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 2;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+    font-size: 43px;
+    letter-spacing: 2px;
+    color: hsl(271, 36%, 24%);
+}
+
+p {
+    font-weight: 400;
+    color: hsl(270, 7%, 64%);
+    /* border:hotpink 1px solid; */
+}
+
+.container {
+    width: 435px;
+    margin: 100px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+    background-color: hsl(270, 20%, 96%);
+    grid-template-areas: 
+    "t t t . . ." 
+    "t t t . . ." 
+    "t t t . . ." 
+    "t t t . . ." 
+    "t t t . . ." 
+    "t t t . . ." 
+    "t t t . . ." 
+    ". p p p p ." 
+    "c c c c c c" 
+    ". . . b b b";
+    /* border: pink 1px solid; */
+}
+
+.backgroundShapeTop {
+    grid-area: t;
+    /* border: 1px solid pink; */
+    border-bottom-right-radius: 100% 70%;
+    background-image: linear-gradient( to top, #6840a5, #8343be, #a244d6, #9119b6);
+}
+
+.phoneShellShape {
+    grid-area: p;
+    /* border: 1px solid pink; */
+    margin-top: -480px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10% / 5%;
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 250px;
+    box-shadow: 0 0.3em 1em hsla(280, 8%, 29%, 0.281);
+}
+
+.content {
+    grid-area: c;
+    margin-top: 80px;
+    z-index: 1;
+    width: 80%;
+    /* border: hotpink solid 1px; */
+    justify-self: center;
+}
+
+.backgroundShapeBottom {
+    grid-area: b;
+    /* border: 1px solid pink; */
+    margin-top: -480px;
+    border-top-left-radius: 100% 70%;
+    background-color: #6840a509;
+}
+
+.topWhiteShape {
+    border-radius: 12% / 50%;
+    background-color: white;
+    border: white solid;
+    width: 50%;
+    height: 5%;
+    align-self: center;
+    margin-top: -12px;
+    z-index: 2;
+}
+
+.phoneShape {
+    /* border:black 1px solid; */
+    width: 100%;
+    height: 100%;
+    border-radius: 10% / 5%;
+    margin-top: -1.2em;
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    flex-direction: column;
+}
+
+.headerShape {
+    /* border: tomato solid 1px; */
+    width: 100%;
+    height: 20%;
+    border-top-left-radius: 7% 27%;
+    border-top-right-radius: 7% 30%;
+    background-image: linear-gradient( to right, #6940a5, #e942ff);
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1em;
+}
+
+.personalInfo {
+    margin-left: 1em;
+    /* border: 1px solid red; */
+    text-align: left;
+    align-self: flex-end;
+    width: 60%;
+}
+
+#avatar {
+    width: 10%;
+    height: 35%;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+    margin-bottom: 0.8em;
+}
+
+#leftIcon {
+    width: 3%;
+    height: 20%;
+    border-radius: 50%;
+    border: none;
+    margin: 0 0.5em 1.3em 0.5em;
+}
+
+#threeDot {
+    width: 10%;
+    height: 25%;
+    margin: 0 0 1.3em 2em;
+}
+
+#head {
+    color: rgba(255, 255, 255, 0.74);
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 1;
+}
+
+#subHead {
+    color: hsl(276, 100%, 81%);
+    font-weight: 400;
+    font-size: .5em;
+    line-height: 1;
+    margin: 0.5em 0 1.3em 0;
+}
+
+.textLeft {
+    padding: 0.5em 1em;
+    font-size: .5em;
+    width: 60%;
+    background-color: hsla(271, 68%, 94%, 0.61);
+    color: hsl(276, 55%, 52%);
+    text-align: left;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 5% / 30%;
+    border-bottom-left-radius: 5px;
+    line-height: 1.5;
+}
+
+.third {
+    width: 63%;
+}
+
+.textRight {
+    color: hsl(271, 15%, 43%);
+    align-self: flex-end;
+    width: 60%;
+    font-size: .5em;
+    text-align: left;
+    background-color: white;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 5% / 30%;
+    padding: 0.5em 1em;
+    line-height: 1.5;
+    border-bottom-right-radius: 5px;
+}
+
+.secondRight {
+    width: 35%;
+    border-radius: 7% / 20%;
+}
+
+.pictures {
+    align-self: flex-end;
+    width: 70%;
+    margin-right: 1em;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.8em;
+}
+
+#dogs {
+    width: 30%;
+    height: 80%;
+    border-radius: 20%;
+}
+
+.offerRadio {
+    width: 70%;
+    background-image: linear-gradient( to left, #6940a5, #e942ff);
+    padding: 1em 1.4em 1em 1em;
+    display: flex;
+    text-align: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offerRadio p {
+    color: rgba(255, 255, 255, 0.842);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.sendBox {
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendBox:hover {
+    background-color: hsla(271, 36%, 24%, 0.733);
+}
+
+.sendBox:active {
+    background-color: hsl(271, 36%, 24%);
+}
+
+.messageSendShape {
+    padding: .5em .5em;
+    background-color: white;
+    margin: 1em;
+    border-radius: 8%/50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sendIcon {
+    width: 40%;
+    height: 50%;
+}
+
+input[type='text'] {
+    border: none;
+    font-size: 0.5em;
+    width: 80%;
+    outline: none;
+}
+
+::placeholder {
+    color: hsl(206, 6%, 79%)
+}
+
+label>input[type='radio'] {
+    appearance: none;
+    width: 1.15em;
+    height: 1.15em;
+    margin: 0;
+    border-radius: 50%;
+    border: hsl(289, 100%, 72%) 1px solid;
+    display: grid;
+    place-content: center;
+}
+
+label {
+    color: rgba(255, 255, 255, 0.555);
+    text-align: center;
+    display: flex;
+    gap: 0.7em;
+}
+
+label>input[type='radio']::before {
+    content: "";
+    width: .65em;
+    height: .65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: hsl(289, 100%, 72%);
+}
+
+label>input[type='radio']:checked::before {
+    transform: scale(1);
+}
+
+input[type='radio']:focus {
+    outline: max(1px, 0.10em) solid hsl(289, 100%, 72%);
+    outline-offset: max(2px, 0.15em);
+}
+
+@media (min-width:1000px) {
+    .container {
+        min-width: 900px;
+        max-width:1400px;
+        width:70%;
+        height:600px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden; 
+    }  
+
+    .backgroundShapeTop {
+        
+        border-bottom-right-radius: 50% 30%;
+        border-bottom-left-radius: 50% 30%;
+        margin: 0;
+        width: 460px;
+        margin-left: -60px;
+        height: 86%; 
+    }
+    
+    .phoneShellShape {
+    width: 245px;    
+    margin: 0;
+    height: 500px;
+    align-self: center;
+    margin-left: -200px;   
+    }
+
+    .content {
+        width: 450px;
+        text-align: left;
+        margin: 0;
+        height:fit-content;
+        align-self: center;
+        margin-right: -190px;
+        margin-left: 30px;
+    }
+
+    h1 {
+        margin-bottom: 0;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .backgroundShapeBottom {
+        width: 450px;
+        border-top-right-radius: 50% 40%;
+        border-top-left-radius: 50% 40%;
+        margin: 0;
+        height: 86%;
+        align-self: flex-end;
+        margin-right: -120px; 
+    }
+}

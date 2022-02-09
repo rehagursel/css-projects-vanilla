@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* resetting code */
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.bold-main, h1 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.light-main {
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+}
+
+.bold-main, .light-main {
+    letter-spacing: 2.5px;
+    font-size: 18px;
+}
+
+.motto, p {
+    max-width: 275px;
+    font-weight: 200;
+    color: rgb(155, 155, 155);
+}
+
+.motto {
+    margin-bottom: 30px;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 96%);
+
+}
+
+.header {
+    background-color: hsl(0, 0%, 96%);
+    text-align: center;
+    padding-top: 30px;
+}
+
+.innerContainer {
+    align-items: center;
+    background-color: hsl(0, 0%, 96%);
+    padding: 30px 25px;
+    width: 80%;
+    max-width: 350px;
+    /* border: brown solid 1px; */
+}
+
+.footer p {
+    font-weight: 100;
+    padding: 5px;
+    max-width: none;
+    text-align: center;
+}
+
+.footer {
+    width: 60%;
+}
+
+.supervisor, .team-builder, .calculator, .karma {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 0.5em 0.5em 0.5em -0.3em hsl(229, 6%, 66%);
+    
+    /* border: brown 1px solid; */
+}
+
+.supervisor {
+    border-top: hsl(180, 62%, 55%) 4px solid;
+}
+
+.team-builder {
+    border-top: hsl(0, 78%, 62%) 4px solid;
+}
+
+.calculator {
+    border-top: hsl(212, 86%, 64%) 4px solid;
+}
+
+.karma {
+    border-top: hsl(34, 97%, 64%) 4px solid;
+}
+
+.img {
+    transform: scale(0.5);
+    align-self: flex-end;
+}
+
+@media (min-width:850px) {
+
+    .innerContainer {
+        max-width: 1000px;
+    }
+
+    .innerContainer {
+        display: flex;
+    }
+
+    .bold-main, .light-main, .motto {
+        max-width: 500px;
+        text-align: center;
+    }
+
+}

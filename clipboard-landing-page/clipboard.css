@@ -1,0 +1,345 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/* ----------------------------------------------
+------------------------------------------------
+---------------TYPOGRAPHY-------------------------
+------------------------------------------------- */
+
+body {
+	line-height: 1.6;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(201, 11%, 66%);
+    letter-spacing: 1.5;
+    text-align: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+h1,h2,h3{
+    color: hsl(210, 10%, 33%);
+}
+
+button:nth-child(1){
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0 0.2em hsl(171, 68%, 36%);
+}
+button:nth-child(1):hover{
+    box-shadow: 0 0.3em hsl(171, 68%, 36%); 
+    transform: translateY(-0.10em);
+    cursor: pointer;
+}
+
+button:nth-child(1):active{
+    background-color:hsl(171, 69%, 46%) ;
+}
+
+button:nth-child(2){
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0 0.2em hsl(233, 64%, 58%);
+}
+
+button:nth-child(2):hover{
+    box-shadow: 0 0.3em hsl(233, 64%, 58%);
+    transform: translateY(-0.10em);
+    cursor: pointer;
+}
+
+button:nth-child(2):active{
+    background-color:hsl(233, 100%, 72%) ;
+}
+
+li:hover{
+    color:hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+/* ---------------------------
+-------------------------------
+LAY OUT
+-----------------------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 390px;
+    margin: 0 auto;
+    /* border: hotpink 1px solid;   */  
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: hotpink 1px solid; */  
+}
+
+.headerMain{     
+    padding: 0 1em;
+    /* border: hotpink 1px solid;  */ 
+}
+
+.downloadButtons{
+    padding: 0 1em;
+    margin-top: 1.5em;
+}
+
+.featuresFirstSection, .featuresSecondSection, .featuresThirdSection, .logoSection, .bottomSection{
+    padding: 0 1em;
+    /* border: hotpink 1px solid; */  
+    margin-top: 8em;
+}
+
+.featuresFirstSubs{
+    padding: 0 1em;
+}
+
+.logoSection, .thirdSectionSubs, .featuresFirstSubs{
+    display: flex;
+    flex-direction: column;
+    /* border: hotpink 1px solid; */  
+}
+
+.thirdSectionSubs{
+    padding: 0 1em;
+}
+
+#computerImg{
+    width: 100%; 
+}
+
+.featuresFirstSubs{
+    margin: 3.5em 0 2em 0;
+}
+
+#deviceImg{
+    margin-top:3.5em;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.featuresSubs p{
+    margin-bottom: 2em;
+}
+
+.thirdSectionSubs div, .logoSection div{
+margin-top: 4em;
+}
+
+#headerImgMobile{
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 0.7em;
+}
+
+.bottomSection div h2{
+    padding: 0 1em;
+}
+
+#logo{
+    position:absolute;   
+}
+
+#headerImgDesktop{
+   display: none;   
+}
+
+.footer{
+    margin-top: 8em;
+    /* border:1px solid purple; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: hsl(202, 100%, 98%);
+}
+
+#bottomLogo{
+    transform: scale(0.5);
+}
+
+.nav li{
+    margin-bottom: 1.2em;
+}
+
+.socialMediaIcons{
+    margin-top: 0.5em;
+    width: 200px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.socialMediaIcons svg{
+margin: 0 15px;
+}
+
+button{
+    padding: 1em 2em;
+    width: 100%;
+    border-radius: 7% / 50%;
+    margin-top: 2em;
+    color: white;
+    border: none;
+    font-size: 20px;   
+}
+
+@media (min-width:750px) {
+
+.container{
+    max-width: 1440px;
+}
+
+.headerMain, .featuresFirstSection, .featuresThirdSection, .bottomSection{
+    width: 600px;
+}
+
+.featuresSecondSection{
+    max-width: 800px;
+}
+
+.featuresSecondSection p{
+    padding:0 100px;
+    /* border: 1px solid pink; */
+}
+
+.logoSection, .thirdSectionSubs{
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.featuresFirstSubs{
+    width: 100%;
+    flex-direction: row;
+    justify-content:flex-start;
+    
+}
+
+.computerImg{
+    width: 55%;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;   
+}
+
+#computerImg{
+    object-fit: cover;
+    object-position: -35px;
+}
+
+.featuresSubs{
+    width: 20%;
+    /* border: pink 1px solid; */
+    margin: 0 100px;
+}
+
+.logoSection div{
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.thirdSectionSubs div{
+    width: 32%;
+}
+
+.downloadButtons{
+    display: flex;
+    width: 440px;
+    justify-content: center;
+    gap: 20px; 
+    /* border: solid 1px palevioletred; */
+}
+
+button{
+    padding: 0.6em 1.2em;
+    width: 43%;
+    border-radius: 12% / 50%;
+    margin-top: 1em;
+    color: white;
+    border: none;
+    font-size: 18px;   
+}
+
+#headerImgMobile{
+    display:none
+}
+
+#headerImgDesktop{
+    display:unset;
+}
+
+.footer{
+    margin-top: 8em;
+    /* border:1px solid purple; */
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between; 
+}
+
+.footerLogo{
+    width: 10%;
+    /* border:1px solid purple; */  
+}
+
+.socialMediaIcons{
+    width: 25%;
+    /* border:1px solid purple; */
+    margin: 0 0 0 8em;
+}
+
+.nav{
+    width: 50%;
+    /* border:1px solid purple; */
+    display: flex;
+    margin-top: 1em;
+}
+
+.nav ul{
+    margin-left: 4em;  
+}
+
+li{
+    text-align: start;
+}
+ 
+}

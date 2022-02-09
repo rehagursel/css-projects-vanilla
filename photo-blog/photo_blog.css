@@ -1,0 +1,21 @@
+img{
+    width: 30%;
+    margin: calc(10%/6);
+    /* margin: 1.6666%; */
+   
+ 
+}
+
+#img{
+    aspect-ratio: 3/2;
+}
+nav{
+    font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+padding: 1em 0;
+font-size: 1.2em;
+border-bottom: black 1px solid;
+width: 30%;
+margin-left: calc(10%/6);
+text-transform: uppercase;
+}
