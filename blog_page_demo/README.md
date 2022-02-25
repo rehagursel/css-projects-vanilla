@@ -2,9 +2,9 @@
 
 Responsive Design using CSS Flexbox
 
-![blogpage1-jpg](/screenShots/blogPage1.png)
-![blogpage2-jpg](/screenShots/blogPage2.png)
-![blogpage3-jpg](/screenShots/blogPage3.png)
+![blogpage1-jpg](/blog_page_demo/screenShots/blogPage1.png)
+![blogpage2-jpg](/blog_page_demo/screenShots/blogPage2.png)
+![blogpage3-jpg](/blog_page_demo/screenShots/blogPage3.png)
 
 ## Technologies Used
 
