@@ -23,7 +23,7 @@ https://www.frontendmentor.io/challenges Frontendmentor Project
 
 https://www.frontendmentor.io/challenges Frontendmentor Project
 
-![blogpage1-jpg](https://res.cloudinary.com/di3ejxszt/image/upload/v1647093586/Portfolio/css-projects-design-png/clipboard-landing-page_mkaojk.png)
+![blogpage1-jpg](https://res.cloudinary.com/di3ejxszt/image/upload/v1647093587/Portfolio/css-projects-design-png/four-card-feature-section_auxkrg.png)
 
 ## intro-component-with-signup-form
 
