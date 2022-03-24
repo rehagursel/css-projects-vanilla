@@ -1,7 +1,11 @@
 # css-responsive-projects-vanilla
 CSS Vanilla Responsive Design Projects 
 
-These are my HTML & CSS projects. 
+### Technologies
+
+- html
+- css & grid
+
 
 ## blog_page_demo
 
