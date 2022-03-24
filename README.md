@@ -1,7 +1,7 @@
 # css-responsive-projects-vanilla
 CSS Vanilla Responsive Design Projects 
 
-These are my HTML & CSS projects. Some of them from bootcamp course and the others from Frontend Mentor (https://www.frontendmentor.io/)
+These are my HTML & CSS projects. 
 
 ## blog_page_demo
 
